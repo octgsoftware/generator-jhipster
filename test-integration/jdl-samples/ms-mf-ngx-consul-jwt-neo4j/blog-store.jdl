@@ -126,9 +126,11 @@ entity Product {
   image ImageBlob
 }
 
+/* TODO relationships at Neo4J cascades, changing the user entity.
 relationship OneToOne {
   @Id UserData{user(login)} to User
 }
+*/
 
 @ChangelogDate(20210408164814)
 entity Notification {
